@@ -9,6 +9,8 @@
 include_once('Ping.php');
 use JJG\Ping as Ping;
 
+class_alias('\PHPUnit_Framework_TestCase', 'PHPUnit\Framework\TestCase');
+
 class PingTest extends PHPUnit_Framework_TestCase {
   private $reachable_host = 'www.google.com';
   private $unreachable_host = '254.254.254.254';
