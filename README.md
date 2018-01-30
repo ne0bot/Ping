@@ -2,7 +2,7 @@
 
 # Ping
 [![Total Downloads](https://img.shields.io/packagist/dt/ne0bot/ping.svg)](https://packagist.org/packages/ne0bot/ping)
-[![Build Status](https://travis-ci.org/ne0bot/ping.svg?branch=1.x)](https://travis-ci.org/ne0bot/ping)
+[![Build Status](https://travis-ci.org/ne0bot/Ping.svg?branch=1.x)](https://travis-ci.org/ne0bot/Ping)
 
 A PHP class to ping hosts.
 
