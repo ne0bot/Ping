@@ -1,8 +1,8 @@
 <img src="https://raw.githubusercontent.com/geerlingguy/Ping/1.x/Resources/Ping-Logo.png" alt="Ping for PHP Logo" />
 
 # Ping
-
-[![Build Status](https://travis-ci.org/geerlingguy/Ping.svg?branch=1.x)](https://travis-ci.org/geerlingguy/Ping)
+[![Total Downloads](https://img.shields.io/packagist/dt/ne0bot/ping.svg)](https://packagist.org/packages/ne0bot/ping)
+[![Build Status](https://travis-ci.org/ne0bot/ping.svg?branch=1.x)](https://travis-ci.org/ne0bot/ping)
 
 A PHP class to ping hosts.
 
@@ -20,7 +20,7 @@ This is a very simple class. Just create an instance, and run `ping()`.
 $host = 'www.example.com';
 $ping = new Ping($host);
 $latency = $ping->ping();
-if ($latency !== false) {
+if ($latency !== -1) {
   print 'Latency is ' . $latency . ' ms';
 }
 else {

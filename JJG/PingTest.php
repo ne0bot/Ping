@@ -64,11 +64,11 @@ class PingTest extends PHPUnit_Framework_TestCase {
   public function testPingExec() {
     $ping = new Ping($this->reachable_host);
     $latency = $ping->ping('exec');
-    $this->assertNotEquals(FALSE, $latency);
+    $this->assertNotEquals(-1, $latency);
 
     $ping->setHost($this->unreachable_host);
     $latency = $ping->ping('exec');
-    $this->assertEquals(FALSE, $latency);
+    $this->assertEquals(-1, $latency);
   }
 
   public function testPingFsockopen() {
